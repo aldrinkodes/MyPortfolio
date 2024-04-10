@@ -42,7 +42,7 @@ function changeName(idname) {
 
   // Array of text to be displayed
 const texts = [
-    "Human",
+    
     "APP developer",
     "Fullstack developer[Beginner]",
     "Coder",
@@ -87,3 +87,62 @@ const texts = [
   // Set interval to change text periodically
   setInterval(changeText2, 5000); // Change every 2 seconds
   
+
+  //dark mode code
+
+
+  const darkModeToggle = document.getElementById('dark-mode-t');
+const body = document.body;
+
+darkModeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});
+
+
+
+
+
+/*Quotes
+
+const txts = [
+
+"The most beautiful thing we can experience is the mysterious. It is the source of all true art and science." - Albert Einstein
+  
+, "Science is the poetry of reality." - Richard Dawkins
+  
+  , "The important thing is to never stop questioning." - Albert Einstein
+  
+  , "Somewhere, something incredible is waiting to be known." - Carl Sagan
+  
+  , "Science knows no country, because knowledge belongs to humanity, and is the torch which illuminates the world." - Louis Pasteur
+  
+  , "Science is not only a disciple of reason but, also, one of romance and passion." - Stephen Hawking
+  
+  , "In science, there are no shortcuts to truth." - Carl Sagan
+  
+  , "Science is the great antidote to the poison of enthusiasm and superstition." - Adam Smith
+  
+  , "The good thing about science is that it's true whether or not you believe in it." - Neil deGrasse Tyson
+  
+  , "Science without religion is lame, religion without science is blind." - Albert Einstein
+  
+ 
+ 
+
+];
+
+// Index to keep track of current text
+let currentIndex1 = 0;
+
+// Function to change text
+function changetxt() {
+  const changingTextElement = document.getElementById("changetxt");
+  changingTextElement.textContent = txts[currentIndex1];
+  currentIndex1 = (currentIndex1 + 1) % txts.length; // Loop back to the start
+}
+
+// Change text initially
+changetxt();
+
+// Set interval to change text periodically
+setInterval(changetxt, 2000); // Change every 2 seconds*/
